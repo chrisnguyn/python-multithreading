@@ -1,0 +1,23 @@
+writing a script to download images on Imgur - three versions:
+    - one is sequential (one download at a time)
+    - one is concurrent (one thread switching around often at I/O time, 'fake parallelism')
+    - one is parallel (multiple threads; 'true parallelism')
+
+
+we'll have a module 'utils.py' which will help us in fetching images. we'll need a way to:
+    - get links to random images
+    - download image from a link
+    - save image to some directory
+
+
+requests library: https://docs.python-requests.org/en/latest/api/
+Imgur API docs: https://apidocs.imgur.com/#b4a88f07-67bc-4c31-a527-fcfd9697e381
+
+
+in Postman: GET https://api.imgur.com/3/gallery/random/random/
+
++
+
+{
+    Authorization : Client-ID {CLIENT_ID}
+}

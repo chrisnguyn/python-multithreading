@@ -1,0 +1,7 @@
+saves images to this directory
+
+on every run, all images will get cleared
+
+don't put anything important in here
+
+thanks bye
