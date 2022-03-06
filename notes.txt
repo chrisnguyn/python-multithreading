@@ -1,3 +1,8 @@
+good reads;
+    - https://www.toptal.com/python/beginners-guide-to-concurrency-and-parallelism-in-python (what this repo is based on)
+    - https://timber.io/blog/multiprocessing-vs-multithreading-in-python-what-you-need-to-know (extra notes on threading)
+
+
 writing a script to download images on Imgur - three versions:
     - one is sequential (one download at a time)
     - one is concurrent (one thread switching around often at I/O time, 'fake parallelism')
@@ -10,7 +15,7 @@ we'll have a module 'utils.py' which will help us in fetching images. we'll need
     - save image to some directory
 
 
-requests library: https://docs.python-requests.org/en/latest/api/
+requests library: https://docs.python-requests.org/en/latest/api
 Imgur API docs: https://apidocs.imgur.com/#b4a88f07-67bc-4c31-a527-fcfd9697e381
 
 
