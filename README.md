@@ -1,2 +1,2 @@
-# concurrency
-sandbox concurrency and multithreading environment
+# python-multithreading
+concurrency and multithreading learning environment
