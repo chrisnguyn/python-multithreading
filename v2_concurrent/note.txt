@@ -1,0 +1,1 @@
+using a queue, not like the double ended queue data structure, but this one https://docs.python.org/3/library/queue.html#module-queue
