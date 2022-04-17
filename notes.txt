@@ -1,6 +1,12 @@
 good reads;
     - https://www.toptal.com/python/beginners-guide-to-concurrency-and-parallelism-in-python (what this repo is based on)
     - https://timber.io/blog/multiprocessing-vs-multithreading-in-python-what-you-need-to-know (extra notes on threading)
+    
+    
+other resources;
+    - https://stackoverflow.com/questions/31508574/semaphores-on-python
+    - https://stackoverflow.com/questions/2332765/what-is-the-difference-between-lock-mutex-and-semaphore/45567101#45567101
+    - https://www.pythontutorial.net/advanced-python/python-threading/
 
 
 writing a script to download images on Imgur - three versions:
