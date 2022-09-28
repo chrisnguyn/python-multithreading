@@ -4,6 +4,12 @@ good reads;
     - https://dev.to/jakewitcher/using-env-files-for-environment-variables-in-python-applications-55a1 (setup .env file)
 
 
+other resources;
+    - https://stackoverflow.com/questions/31508574/semaphores-on-python
+    - https://stackoverflow.com/questions/2332765/what-is-the-difference-between-lock-mutex-and-semaphore/45567101#45567101
+    - https://www.pythontutorial.net/advanced-python/python-threading/
+
+
 writing a script to download images on Imgur - three versions:
     - one is sequential (one download at a time)
     - one is concurrent (one thread switching around often at I/O time, 'fake parallelism')
