@@ -20,7 +20,7 @@ def get_image_links(client_id):
     data = response.json()
 
     for item in data['data']:
-        if 'type' in item and item['type'] in { 'image/jpeg', 'image/png' }:
+        if 'type' in item and item['type'] in { 'image/jpg', 'image/jpeg', 'image/png' }:
             image_links.append(item['link'])
     
     return image_links

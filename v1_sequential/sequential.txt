@@ -1,0 +1,9 @@
+sequentially - one at a time
+
+we'll make a GET request and wait for it to come back (download an image and wait for it to come back)
+
+this can be really slow - especially for large volumes of images, or really large images
+
+it would be good if while we're waiting for something to be done, we can begin a new task
+
+therefore we will be introducing concurrency and parallelism solutions
