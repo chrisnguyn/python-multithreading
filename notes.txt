@@ -3,7 +3,7 @@ good reads;
     - https://timber.io/blog/multiprocessing-vs-multithreading-in-python-what-you-need-to-know (extra notes on threading)
     - https://dev.to/jakewitcher/using-env-files-for-environment-variables-in-python-applications-55a1 (setup .env file)
 
-
+    
 other resources;
     - https://stackoverflow.com/questions/31508574/semaphores-on-python
     - https://stackoverflow.com/questions/2332765/what-is-the-difference-between-lock-mutex-and-semaphore/45567101#45567101
