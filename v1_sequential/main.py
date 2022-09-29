@@ -10,7 +10,7 @@ load_dotenv()
 def main():
     key = os.getenv('CLIENT_ID')
     # dl_path = Path('/mnt/c/Users/Chris/Desktop/python-multithreading/images')  # windows
-    # dl_path = Path('/Users/chris/Desktop/Stuff/GitHub/python-multithreading/images')  # mac
+    dl_path = Path('/Users/chris/Desktop/Stuff/GitHub/python-multithreading/images')  # mac
     image_links = get_image_links(key)
     clear_images(dl_path)
     timestamp = time()

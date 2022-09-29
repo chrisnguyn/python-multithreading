@@ -1,1 +1,25 @@
-using a queue, not like the double ended queue data structure, but this one https://docs.python.org/3/library/queue.html#module-queue
+using a queue (not like the queue data structure, but this one)
+    - https://docs.python.org/3/library/queue.html
+    - https://docs.python.org/3/library/queue.html#module-queue
+
+we'll spawn 8 threads (making it 9 including the main one), we choose 8 worker threads because we have an 8-core CPU (but in
+principle you usually choose this number more carefully on other factors)
+
+this version of our app is the same as the previous one but now has a new class which is a descendent of the Python 'Thread' class
+
+we override the 'run' method to have an infinite loop which continuously try and fetch a URL in a worker queue (if there is work to do)
+
+it blocks until there is an item in the queue for the worker to process. once a worker thread receives an item from the queue
+it will call the function to download the image, and when that's done it signals the queue the task is finished
+
+this is important, since the queue keeps track of how many tasks are enqueued. the call to 'queue.join()' is blocked
+until all workers signal they are done the work in the queue
+
+
+this is a MUCH FASTER implementation, but note that still, only ONE thread is running at a time.
+the thread is IO bound, so it switches when a task is waiting (eg. when retrieving an image), therefore
+we say that this implementation is CONCURRENT but not PARALLEL
+
+using threading is slow if the task is a CPU bound task, like decompressing files.
+
+to make CPU bound tasks faster, we can use PARALLELISM (multiple CPUs using multiple processes at the same time).
