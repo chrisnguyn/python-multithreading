@@ -12,7 +12,7 @@ other resources;
 
 writing a script to download images on Imgur - three versions:
     - one is sequential (one download at a time)
-    - one is concurrent (one thread switching around often at I/O time, 'fake parallelism')
+    - one is concurrent (multiple threads that keep switching around at I/O time (only one process runs at a time), 'fake parallelism')
     - one is parallel (multiple threads; 'true parallelism')
 
 
