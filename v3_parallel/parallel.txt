@@ -1,0 +1,21 @@
+parallelism - https://docs.python.org/3/library/multiprocessing.html
+
+to review,
+
+sequential: one thread doing all the work (has to wait through IO bound tasks)
+
+concurrent: multiple threads, but the CPU keeps switching around when threads are paused (IO bursts)
+
+parallel: multiple threads working at the same time
+
+
+to use multiple processes we create a multiprocessing 'Pool'
+
+with the map method in its class, we pass a list of URLs to the Pool which spawns 8 new processes
+and use each one to download images in parallel
+
+this is true parallelism, but the entire memory of the script is passed into each subprocess spawned
+in a simple example this is fine, but in large processes it causes a very large memory overhead
+
+concurrency is great for IO bound tasks (parallelism too, but lots of memory overhead)
+parallelism is great for CPU bound tasks
